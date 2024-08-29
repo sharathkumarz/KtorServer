@@ -27,7 +27,7 @@ data class Customer(
 )
 
 // Define the MongoDB client and collection once
-val client: CoroutineClient = KMongo.createClient("mongodb+srv://user35:user35@cluster0.jb83w.mongodb.net/myDatabase?retryWrites=true&w=majority").coroutine
+val client: CoroutineClient = KMongo.createClient("mongodb+srv://userid:****@cluster0.jb83w.mongodb.net/myDatabase?retryWrites=true&w=majority").coroutine
 val database: CoroutineDatabase = client.getDatabase("CUSTOMERDATA")
 val collection: CoroutineCollection<Customer> = database.getCollection<Customer>()
 
